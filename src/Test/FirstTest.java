@@ -13,13 +13,13 @@ class FirstTest {
     }
 
 
-
     WebDriver NewDriver = new ChromeDriver();
     @Test
     void Rety()
     {
         NewDriver.navigate().to("https://www.playags-games.com");
         NewDriver.manage().window().maximize();
+        NewDriver.manage().window().fullscreen();
 
     }
 
