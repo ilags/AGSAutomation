@@ -1,0 +1,511 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "Data",
+    "Error",
+    "Status"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "__type",
+        "AdsLimitData",
+        "ApiVersion",
+        "AppVersion",
+        "BottomUrl",
+        "CenterUrl",
+        "ForceUpdate",
+        "GeoBlockText",
+        "GeoBlockTextTitle",
+        "GuestAccountMergeDisable",
+        "GuestAccountMergeMinsToExpiration",
+        "IsDownToMaintenance",
+        "IsGeoBlocked",
+        "LobbyDisplayMode",
+        "MSToWaitBeforeRecall",
+        "MaxRetriesForDynamicLoading",
+        "MinutesToPersistPayout",
+        "NumberOfTimesToSeeRateUs",
+        "NumberOfTimesToShowNotificationFtue",
+        "PollingIntervalMs",
+        "PrivacyPolicy",
+        "ResendFailedCalls",
+        "ReturnToBonusInFreeSpins",
+        "SessionsIntervalToShowNotificationFtue",
+        "SessionsIntervalToShowRateusFtue",
+        "SessionsToShowNotificationFtue",
+        "SessionsToShowRateusFtue",
+        "ShouldDisplayBingo",
+        "ShouldDisplayCoupon",
+        "ShouldDisplayPopupsOnLandscape",
+        "ShouldDisplaySport",
+        "ShouldSendTokenForSpinGames",
+        "ShowNativeShare",
+        "ShowTHChips",
+        "Ske",
+        "SocialSharingDetails",
+        "StickiesInterval",
+        "SupportAddress",
+        "TermsOfService",
+        "TopUrl",
+        "UserStartChips"
+      ],
+      "properties": {
+        "__type": {
+          "$id": "#/properties/Data/properties/__type",
+          "type": "string",
+          "title": "The __type Schema",
+          "default": "",
+          "examples": [
+            "VersionData:#VegasSportsAPI.MobileServices.Models"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "AdsLimitData": {
+          "$id": "#/properties/Data/properties/AdsLimitData",
+          "type": "object",
+          "title": "The Adslimitdata Schema",
+          "required": [
+            "MaxChipsAdsPerDay",
+            "MaxTicketsAdsPerDay"
+          ],
+          "properties": {
+            "MaxChipsAdsPerDay": {
+              "$id": "#/properties/Data/properties/AdsLimitData/properties/MaxChipsAdsPerDay",
+              "type": "integer",
+              "title": "The Maxchipsadsperday Schema",
+              "default": 0,
+              "examples": [
+                20
+              ]
+            },
+            "MaxTicketsAdsPerDay": {
+              "$id": "#/properties/Data/properties/AdsLimitData/properties/MaxTicketsAdsPerDay",
+              "type": "integer",
+              "title": "The Maxticketsadsperday Schema",
+              "default": 0,
+              "examples": [
+                100
+              ]
+            }
+          }
+        },
+        "ApiVersion": {
+          "$id": "#/properties/Data/properties/ApiVersion",
+          "type": "string",
+          "title": "The Apiversion Schema",
+          "default": "",
+          "examples": [
+            "1.3384"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "AppVersion": {
+          "$id": "#/properties/Data/properties/AppVersion",
+          "type": "string",
+          "title": "The Appversion Schema",
+          "default": "",
+          "examples": [
+            "web - no version needed"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "BottomUrl": {
+          "$id": "#/properties/Data/properties/BottomUrl",
+          "type": "null",
+          "title": "The Bottomurl Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "CenterUrl": {
+          "$id": "#/properties/Data/properties/CenterUrl",
+          "type": "null",
+          "title": "The Centerurl Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "ForceUpdate": {
+          "$id": "#/properties/Data/properties/ForceUpdate",
+          "type": "boolean",
+          "title": "The Forceupdate Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "GeoBlockText": {
+          "$id": "#/properties/Data/properties/GeoBlockText",
+          "type": "null",
+          "title": "The Geoblocktext Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "GeoBlockTextTitle": {
+          "$id": "#/properties/Data/properties/GeoBlockTextTitle",
+          "type": "null",
+          "title": "The Geoblocktexttitle Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "GuestAccountMergeDisable": {
+          "$id": "#/properties/Data/properties/GuestAccountMergeDisable",
+          "type": "boolean",
+          "title": "The Guestaccountmergedisable Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "GuestAccountMergeMinsToExpiration": {
+          "$id": "#/properties/Data/properties/GuestAccountMergeMinsToExpiration",
+          "type": "integer",
+          "title": "The Guestaccountmergeminstoexpiration Schema",
+          "default": 0,
+          "examples": [
+            240
+          ]
+        },
+        "IsDownToMaintenance": {
+          "$id": "#/properties/Data/properties/IsDownToMaintenance",
+          "type": "boolean",
+          "title": "The Isdowntomaintenance Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "IsGeoBlocked": {
+          "$id": "#/properties/Data/properties/IsGeoBlocked",
+          "type": "boolean",
+          "title": "The Isgeoblocked Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "LobbyDisplayMode": {
+          "$id": "#/properties/Data/properties/LobbyDisplayMode",
+          "type": "integer",
+          "title": "The Lobbydisplaymode Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "MSToWaitBeforeRecall": {
+          "$id": "#/properties/Data/properties/MSToWaitBeforeRecall",
+          "type": "integer",
+          "title": "The Mstowaitbeforerecall Schema",
+          "default": 0,
+          "examples": [
+            30
+          ]
+        },
+        "MaxRetriesForDynamicLoading": {
+          "$id": "#/properties/Data/properties/MaxRetriesForDynamicLoading",
+          "type": "integer",
+          "title": "The Maxretriesfordynamicloading Schema",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        },
+        "MinutesToPersistPayout": {
+          "$id": "#/properties/Data/properties/MinutesToPersistPayout",
+          "type": "integer",
+          "title": "The Minutestopersistpayout Schema",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "NumberOfTimesToSeeRateUs": {
+          "$id": "#/properties/Data/properties/NumberOfTimesToSeeRateUs",
+          "type": "integer",
+          "title": "The Numberoftimestoseerateus Schema",
+          "default": 0,
+          "examples": [
+            4
+          ]
+        },
+        "NumberOfTimesToShowNotificationFtue": {
+          "$id": "#/properties/Data/properties/NumberOfTimesToShowNotificationFtue",
+          "type": "integer",
+          "title": "The Numberoftimestoshownotificationftue Schema",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "PollingIntervalMs": {
+          "$id": "#/properties/Data/properties/PollingIntervalMs",
+          "type": "integer",
+          "title": "The Pollingintervalms Schema",
+          "default": 0,
+          "examples": [
+            -1
+          ]
+        },
+        "PrivacyPolicy": {
+          "$id": "#/properties/Data/properties/PrivacyPolicy",
+          "type": "string",
+          "title": "The Privacypolicy Schema",
+          "default": "",
+          "examples": [
+            "https://playags.com/agsi-llc-privacy-policy"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "ResendFailedCalls": {
+          "$id": "#/properties/Data/properties/ResendFailedCalls",
+          "type": "boolean",
+          "title": "The Resendfailedcalls Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "ReturnToBonusInFreeSpins": {
+          "$id": "#/properties/Data/properties/ReturnToBonusInFreeSpins",
+          "type": "boolean",
+          "title": "The Returntobonusinfreespins Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "SessionsIntervalToShowNotificationFtue": {
+          "$id": "#/properties/Data/properties/SessionsIntervalToShowNotificationFtue",
+          "type": "integer",
+          "title": "The Sessionsintervaltoshownotificationftue Schema",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "SessionsIntervalToShowRateusFtue": {
+          "$id": "#/properties/Data/properties/SessionsIntervalToShowRateusFtue",
+          "type": "integer",
+          "title": "The Sessionsintervaltoshowrateusftue Schema",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "SessionsToShowNotificationFtue": {
+          "$id": "#/properties/Data/properties/SessionsToShowNotificationFtue",
+          "type": "integer",
+          "title": "The Sessionstoshownotificationftue Schema",
+          "default": 0,
+          "examples": [
+            3
+          ]
+        },
+        "SessionsToShowRateusFtue": {
+          "$id": "#/properties/Data/properties/SessionsToShowRateusFtue",
+          "type": "integer",
+          "title": "The Sessionstoshowrateusftue Schema",
+          "default": 0,
+          "examples": [
+            2
+          ]
+        },
+        "ShouldDisplayBingo": {
+          "$id": "#/properties/Data/properties/ShouldDisplayBingo",
+          "type": "boolean",
+          "title": "The Shoulddisplaybingo Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "ShouldDisplayCoupon": {
+          "$id": "#/properties/Data/properties/ShouldDisplayCoupon",
+          "type": "boolean",
+          "title": "The Shoulddisplaycoupon Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "ShouldDisplayPopupsOnLandscape": {
+          "$id": "#/properties/Data/properties/ShouldDisplayPopupsOnLandscape",
+          "type": "boolean",
+          "title": "The Shoulddisplaypopupsonlandscape Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "ShouldDisplaySport": {
+          "$id": "#/properties/Data/properties/ShouldDisplaySport",
+          "type": "boolean",
+          "title": "The Shoulddisplaysport Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "ShouldSendTokenForSpinGames": {
+          "$id": "#/properties/Data/properties/ShouldSendTokenForSpinGames",
+          "type": "boolean",
+          "title": "The Shouldsendtokenforspingames Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "ShowNativeShare": {
+          "$id": "#/properties/Data/properties/ShowNativeShare",
+          "type": "boolean",
+          "title": "The Shownativeshare Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "ShowTHChips": {
+          "$id": "#/properties/Data/properties/ShowTHChips",
+          "type": "boolean",
+          "title": "The Showthchips Schema",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "Ske": {
+          "$id": "#/properties/Data/properties/Ske",
+          "type": "string",
+          "title": "The Ske Schema",
+          "default": "",
+          "examples": [
+            "cGtfbGl2ZV9TQnpFTVRCZktvdkhqNDFVNHZBNHpsSlg="
+          ],
+          "pattern": "^(.*)$"
+        },
+        "SocialSharingDetails": {
+          "$id": "#/properties/Data/properties/SocialSharingDetails",
+          "type": "object",
+          "title": "The Socialsharingdetails Schema",
+          "required": [
+            "Message",
+            "Subject",
+            "Url"
+          ],
+          "properties": {
+            "Message": {
+              "$id": "#/properties/Data/properties/SocialSharingDetails/properties/Message",
+              "type": "string",
+              "title": "The Message Schema",
+              "default": "",
+              "examples": [
+                "Check out Lucky Play Casino"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Subject": {
+              "$id": "#/properties/Data/properties/SocialSharingDetails/properties/Subject",
+              "type": "string",
+              "title": "The Subject Schema",
+              "default": "",
+              "examples": [
+                "Check out Lucky Play Casino"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Url": {
+              "$id": "#/properties/Data/properties/SocialSharingDetails/properties/Url",
+              "type": "string",
+              "title": "The Url Schema",
+              "default": "",
+              "examples": [
+                "https://www.playmohawkcasino.com/gameamc.aspx"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        },
+        "StickiesInterval": {
+          "$id": "#/properties/Data/properties/StickiesInterval",
+          "type": "integer",
+          "title": "The Stickiesinterval Schema",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "SupportAddress": {
+          "$id": "#/properties/Data/properties/SupportAddress",
+          "type": "string",
+          "title": "The Supportaddress Schema",
+          "default": "",
+          "examples": [
+            "agsihelp@playags.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "TermsOfService": {
+          "$id": "#/properties/Data/properties/TermsOfService",
+          "type": "string",
+          "title": "The Termsofservice Schema",
+          "default": "",
+          "examples": [
+            "https://playags.com/agsi-terms-service/"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "TopUrl": {
+          "$id": "#/properties/Data/properties/TopUrl",
+          "type": "null",
+          "title": "The Topurl Schema",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "UserStartChips": {
+          "$id": "#/properties/Data/properties/UserStartChips",
+          "type": "integer",
+          "title": "The Userstartchips Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        }
+      }
+    },
+    "Error": {
+      "$id": "#/properties/Error",
+      "type": "null",
+      "title": "The Error Schema",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "Status": {
+      "$id": "#/properties/Status",
+      "type": "integer",
+      "title": "The Status Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    }
+  }
+}
