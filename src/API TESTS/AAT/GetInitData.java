@@ -2,6 +2,10 @@ package AAT;
 
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
@@ -59,6 +63,21 @@ public class GetInitData {
                 get( baseURI + "version=1.8.7&appId=1&deviceName=web&unAuthenticatedUserId=2639254358688633&FBUserID=&AppUserID=").
                 then().
                 time(lessThan(1000L));
+    }
+
+
+    //Example of extract a specific value of an key in the response 
+    @Test
+    public void ResponseExample() {
+
+        RequestSpecification httpRequest = RestAssured.given();
+        Response response = httpRequest.get(baseURI +"version=1.8.7&appId=1&deviceName=web&unAuthenticatedUserId=2639254358688633&FBUserID=&AppUserID=" );
+        ResponseBody body  =  response.getBody();
+        JsonPath JsonPathValidator = response.jsonPath();
+        String AppVersion  = JsonPathValidator.get("Data.AppVersion");
+        System.out.println(AppVersion);
+
+
     }
 }
 
